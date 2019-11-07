@@ -11,7 +11,7 @@ Time spent: **X** hours spent in total
 The following **required** functionality is completed:
 
 - [x] User can compose a tweet. (4pts)
-- [ ] User can favorite a tweet. (4pts)
+- [x] User can favorite a tweet. (4pts)
 - [ ] User can retweet a tweet. (2pts)
 
 The following **bonus** features are implemented:
@@ -44,8 +44,8 @@ The following **required** functionality is completed:
 
 The following **bonus** features are implemented:
 
-- [ ] User can pull to refresh. (1pt)
-- [ ] User can load past tweets infinitely. (2pts)
+- [x] User can pull to refresh. (1pt)
+- [x] User can load past tweets infinitely. (2pts)
 
 ## Video Walkthrough
 
