@@ -30,7 +30,7 @@ Here's a walkthrough of implemented user stories:
 
 Twitter Twin is a basic twitter app to read your tweets.
 
-Time spent: 4 hours spent in total
+Time spent: **4** hours spent in total
 
 ## User Stories
 
