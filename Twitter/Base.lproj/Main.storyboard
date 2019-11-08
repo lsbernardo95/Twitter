@@ -83,31 +83,44 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1T-GJ-MQU">
-                                            <rect key="frame" x="84" y="113" width="84" height="34"/>
-                                            <state key="normal" title="Button"/>
+                                            <rect key="frame" x="84" y="117" width="30" height="30"/>
+                                            <state key="normal" image="favor-icon"/>
                                             <connections>
                                                 <action selector="favoriteTweet:" destination="H56-8R-ETr" eventType="touchUpInside" id="z29-4V-rp0"/>
                                             </connections>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrf-pm-aBE">
+                                            <rect key="frame" x="122" y="117" width="30" height="30"/>
+                                            <state key="normal" image="retweet-icon"/>
+                                            <connections>
+                                                <action selector="retweet:" destination="H56-8R-ETr" eventType="touchUpInside" id="7eI-Ml-Myf"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="zrf-pm-aBE" firstAttribute="leading" secondItem="I1T-GJ-MQU" secondAttribute="trailing" constant="8" id="0UQ-TB-ofB"/>
                                         <constraint firstItem="UcW-as-XuT" firstAttribute="top" secondItem="L9V-mc-e1T" secondAttribute="topMargin" id="9mO-J8-ObA"/>
+                                        <constraint firstItem="I1T-GJ-MQU" firstAttribute="top" secondItem="6sZ-dJ-1Je" secondAttribute="bottom" constant="85" id="A7n-0W-6nh"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="9oT-IX-8Hy" secondAttribute="bottom" constant="29" id="D0K-zy-ByR"/>
                                         <constraint firstItem="UcW-as-XuT" firstAttribute="leading" secondItem="L9V-mc-e1T" secondAttribute="leadingMargin" id="Ehp-SR-ovb"/>
                                         <constraint firstItem="9oT-IX-8Hy" firstAttribute="leading" secondItem="UcW-as-XuT" secondAttribute="trailing" constant="8" id="OGC-lh-XnT"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="I1T-GJ-MQU" secondAttribute="trailing" constant="191" id="UDf-aI-0dt"/>
-                                        <constraint firstItem="I1T-GJ-MQU" firstAttribute="leading" secondItem="L9V-mc-e1T" secondAttribute="leadingMargin" constant="68" id="Ziw-at-i91"/>
+                                        <constraint firstItem="zrf-pm-aBE" firstAttribute="top" secondItem="6sZ-dJ-1Je" secondAttribute="bottom" constant="85" id="U1D-Oa-YAh"/>
+                                        <constraint firstItem="zrf-pm-aBE" firstAttribute="bottom" secondItem="L9V-mc-e1T" secondAttribute="bottomMargin" id="ZL1-3J-DRg"/>
+                                        <constraint firstItem="I1T-GJ-MQU" firstAttribute="leading" secondItem="L9V-mc-e1T" secondAttribute="leadingMargin" constant="68" id="aiD-qs-rmj"/>
+                                        <constraint firstItem="zrf-pm-aBE" firstAttribute="leading" secondItem="I1T-GJ-MQU" secondAttribute="trailing" constant="8" id="bYG-ds-KS4"/>
                                         <constraint firstItem="6sZ-dJ-1Je" firstAttribute="top" secondItem="L9V-mc-e1T" secondAttribute="topMargin" id="bp2-7u-Vlm"/>
                                         <constraint firstItem="6sZ-dJ-1Je" firstAttribute="leading" secondItem="UcW-as-XuT" secondAttribute="trailing" constant="8" id="pPk-ZX-tm4"/>
                                         <constraint firstItem="9oT-IX-8Hy" firstAttribute="trailing" secondItem="L9V-mc-e1T" secondAttribute="trailingMargin" id="qEp-gh-W1r"/>
-                                        <constraint firstItem="I1T-GJ-MQU" firstAttribute="bottom" secondItem="L9V-mc-e1T" secondAttribute="bottomMargin" id="qVn-hN-p5b"/>
+                                        <constraint firstItem="I1T-GJ-MQU" firstAttribute="bottom" secondItem="L9V-mc-e1T" secondAttribute="bottomMargin" id="tYH-9F-AyR"/>
                                         <constraint firstItem="9oT-IX-8Hy" firstAttribute="top" secondItem="6sZ-dJ-1Je" secondAttribute="bottom" constant="8" id="z0m-sL-vhr"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="zrf-pm-aBE" secondAttribute="trailing" constant="207" id="zQC-gJ-mjK"/>
                                         <constraint firstItem="6sZ-dJ-1Je" firstAttribute="trailing" secondItem="L9V-mc-e1T" secondAttribute="trailingMargin" id="zso-cy-A8s"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="favoritedIcon" destination="I1T-GJ-MQU" id="DLJ-xV-rS3"/>
                                     <outlet property="profileImageView" destination="UcW-as-XuT" id="U1z-HA-k7o"/>
+                                    <outlet property="retweetedIcon" destination="zrf-pm-aBE" id="0JA-Is-5e7"/>
                                     <outlet property="tweetContentLabel" destination="9oT-IX-8Hy" id="Z0A-Rm-MNW"/>
                                     <outlet property="usernameLabel" destination="6sZ-dJ-1Je" id="wKH-FA-1uX"/>
                                 </connections>
@@ -220,4 +233,8 @@
             <point key="canvasLocation" x="750" y="-300"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="favor-icon" width="30" height="30"/>
+        <image name="retweet-icon" width="30" height="30"/>
+    </resources>
 </document>
